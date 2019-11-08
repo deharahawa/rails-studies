@@ -6,13 +6,13 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should get request" do
-    get static_pages_request_url
+  test "should get tip" do
+    get static_pages_tip_url
     assert_response :success
   end
 
-  test "should get tip" do
-    get static_pages_tip_url
+  test "should get ask_music" do
+    get static_pages_ask_music_url
     assert_response :success
   end
 

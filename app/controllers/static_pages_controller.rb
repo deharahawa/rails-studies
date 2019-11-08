@@ -2,9 +2,17 @@ class StaticPagesController < ApplicationController
   def home
   end
 
-  def request
+  def tip
   end
 
-  def tip
+  def ask_music
+  end
+
+  def clap
+    if session[:claps] != nil
+      session[:claps] = session[:claps] + 1
+    else
+      session[:claps] = 0
+    end
   end
 end
